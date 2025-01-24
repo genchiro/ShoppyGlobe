@@ -5,4 +5,8 @@ function ProductList(props){
         <ProductItems/>
     </div>)
 }
+ProductList.defaultProps = {
+colors:"#fff",
+text:""
+}
 export default ProductList;

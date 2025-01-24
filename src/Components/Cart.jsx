@@ -3,9 +3,11 @@ import CartItems from "./CartItems";
 import Footer from "./Footer";
 import NavBar from "./NavBar";
 import { useSelector } from "react-redux";
+import Error from "./Error";
 function Cart(){
     const[Price,setPrice] = useState(0.00);
     const Cart = useSelector((state) => state.CartData);
+    const Errors = useSelector((state) => state.Error); 
     function TotalPrice(Cart){
     let Total = 0;
     Cart.forEach(element => {
@@ -23,6 +25,9 @@ function Cart(){
     useEffect(() =>{
     setPrice(num3);
     },[Cart])
+    if(Errors){
+    return<Error/>
+    }
     return(<>
     <NavBar/>
     <div id="Cart_Container">

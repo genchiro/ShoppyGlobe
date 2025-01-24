@@ -1,0 +1,277 @@
+@media(min-width:768px){
+    #Hamburger_Icon{
+        display:none;
+    }
+    html{
+    font-size:1vw;
+    overflow-x:hidden !important;
+    }
+    .Slide_Container{
+    flex-direction:row;
+    }
+    #Adding_to_Cart{
+    font-size:0.9rem;
+    }
+    #Price_Item{
+        width:11.5rem;
+    }
+}
+@media(max-width:768px) and (min-width:320px){
+    #Footer_container{
+    padding-bottom:40rem !important;
+    }
+    #Hamburger_Icon{
+     display:block;
+    }
+    #NotFound_Container{
+    margin-bottom:10rem !important;
+    }
+    .Product_Detail{
+    flex-wrap:wrap !important;
+    }
+    .Product_Detail img{
+    width:30% !important;
+    }
+    #Shop_Link{
+        display:none;
+    }
+    #Home_Link{
+        display:none;
+    }
+    #Cart_Link{
+     display:none;
+    }
+    #Adding_to_Cart{
+    font-size:0.9rem !important;
+    }
+    #Company_Name{
+    font-size:2.2rem !important;
+    }
+    #Cart_Icon img{
+    width:2.5rem !important;
+    height:2.5rem !important;
+    }
+    #Items_Count{
+    width:1.7rem !important;
+    height:1.7rem !important;
+    font-size:0.9rem !important;
+    }
+    .Overlay{
+    height:18rem !important;
+    font-size:2rem !important;
+    }
+    .Hidden_Buttons{
+    font-size:1.5rem !important;
+    }
+    #Hamburger_Icon img{
+    width:2.3rem !important;
+    height:2.3rem !important;
+    }
+    #footer_p1,#footer_p2,#footer_p3,#footer_p4{
+    width:30% !important;
+    }
+    html{
+    font-size:1.7vw;
+    }
+    .Product_Items{
+        width:25rem !important;
+    }
+    #Filter_Container{
+    margin-left:2rem !important;
+    width:16rem !important;
+    }
+    #List_of_Category{
+    left:2rem !important;
+    }
+    #Filter{
+    font-size:1.3rem !important;
+    }
+    .Categories{
+    font-size: 1.3rem !important;
+    }
+    #Search_Container{
+    margin-left:3rem !important;
+    }
+    .Additional_Data{
+    width:30% !important;
+    }
+    .Slide_Container{
+    flex-direction:column;
+    align-items:center;
+    }
+    .Slide_Data{
+    width:100% !important;
+    }
+    .Slide_Container img{
+    width:35rem;
+    }
+    #Price_Item{
+    width:11.5rem;
+    }
+}
+@media(max-width:320px){
+    #Company_Name{
+    font-size:2.7rem !important;
+    margin-left:1rem !important;
+    }
+    #List_of_Category{
+        left:1rem !important;
+    }
+    .Hidden_Buttons{
+    font-size:2rem !important;
+    }
+    #Company_Name img{
+    width:3rem !important;
+    height:3rem !important;
+    }
+    #Hamburger_Icon img{
+    width:3rem !important;
+    height:3rem !important;
+    }
+    #Cart_Icon img{
+    width:3rem !important;
+    height:3rem !important;
+    }
+    #Filter_Container{
+    width:22rem !important;
+    height:4rem !important;
+    margin-left:1rem !important;
+    }
+    #Border{
+    height:2rem !important;
+    }
+    #Down{
+    width:1.5rem !important;
+    height:1.5rem !important;
+    }
+    #Filter{
+    font-size: 1.9rem !important;
+    }
+    #Hamburger_Icon{
+        display:block;
+       }
+       #Shop_Link{
+           display:none;
+       }
+       #Home_Link{
+           display:none;
+       }
+       #Cart_Link{
+        display:none;
+       }
+       #footer_p1,#footer_p2,#footer_p3,#footer_p4{
+       width:100% !important;
+       }
+       .AboutUs_Links,.CustomerCare_Links,.Contact_Links,p{
+        font-size:1.7rem !important;
+       }
+       footer h1{
+       font-size:3rem !important;
+       }
+       #Footer_container{
+       padding-bottom:95rem !important;
+       }
+       html{
+       font-size:2vw;}
+       .Additional_Data{
+       width:50% !important;
+       }
+       .Additional_Data h3{
+        font-size:2rem !important;
+        margin:1rem 0;
+        font-weight:500;
+      }
+      .Product_Items{
+    width:35rem !important;
+    justify-content:center;
+      }
+      .Product_Items img{
+     width:100%;
+      }
+      .Product_Detail{
+        flex-wrap:wrap !important;
+        height:fit-content !important;
+      }
+      .Product_Other_Details{
+      width:100% !important;
+      }
+      #Description_Rating_Container{
+      margin:10rem 0 !important;
+      }
+      #Star_Rating img{
+    height: 2rem !important;
+    width:2rem !important;
+      }
+      .Product_Detail img{
+       width:50% !important;
+       height:50% !important;
+      }
+      .Product_Discount{
+        font-size:1.4rem !important;
+      }
+      .Rating_Star{
+       height:2rem !important;
+       width:2rem !important;
+      }
+      .Product_Price{
+    font-size:2.5rem !important;
+      }
+      
+      .Adding_To_Cart{
+    width: 3.5rem !important;
+    height:3.5rem !important;
+    font-size:3rem !important;
+      }
+      #AdditionalInfo img{
+        width:3rem !important;
+        height:3rem !important;
+      }
+      .Additional_Data p{
+        font-size:1.5rem !important;
+        margin:1rem 0;
+      }
+       .Slide_Container{
+       flex-direction:column;
+       align-items:center;
+       }
+       .Slide_Data{
+       width:100% !important;
+       }
+       .Slide_Container img{
+       width:35rem;
+       }
+       #Description_Rating,#Product_Complete_Description{
+        margin-left:1rem !important;
+       }
+       #Price_Item{
+        width:15rem;
+       }
+       #Descriptions,#Reviews{
+        font-size:2rem !important;
+        margin-right:2.5rem !important;
+       }
+       #Adding_to_Cart{
+       width:15rem !important;
+       height:5rem !important;
+       font-size:1.5rem !important;
+       }
+       #Total_Input{
+       width:10rem !important;
+       height:3rem !important;
+       font-size: 2rem !important;
+       margin-bottom:2rem !important;
+       }
+       #Product_Description{
+        width:100% !important;
+        font-size:2rem !important;
+       }
+       #Numerical_Rating,#Product_Category{
+        font-size:1.7rem !important;
+       }
+       #Products_Like{
+        font-size:2rem !important;
+       }
+       #Nav_Buttons_Container{
+        margin-right:3rem !important;
+       }
+}
