@@ -21,7 +21,7 @@ function Shop(){//Shop Function to return Shop Page
     }
     function HandleClick(e){//Handling Click on categories
     dispatch(ChangeCategory(e.target.textContent));
-    e.target.parentElement.style.display = "none";
+    dispatch(ChangeDisplay())
     }
     const Category = useSelector((state) => state.Category);
     if(Data.length === 0) return <Loading/>

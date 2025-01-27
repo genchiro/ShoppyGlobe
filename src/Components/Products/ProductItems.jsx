@@ -24,8 +24,8 @@ function ProductItems(){//Returning the ProductItems with this function
     function HandleClick(e){
     const ID = e.target.closest(".Product_Items").id;
     navigate(`/Details/${ID}`);
-    }
-    const num10 = useMemo(() => (Search) ? Data.filter((elem) => elem.Name.includes(Search)):Data,[Search,Data])
+    }//Below code is used to find out the Searched Item in the List of Items
+    const num10 = useMemo(() => (Search) ? Data.filter((elem) => elem.Name.toLowerCase().includes(Search.toLowerCase())):Data,[Search,Data])
     num5 = useMemo(() =>{//Generating random Data so that random data is generated every time
         const Max = num10.length;
         const Min = (Max > 6) ? Max - 6:0;

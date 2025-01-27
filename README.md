@@ -9,7 +9,6 @@ ShoppyGlobe is a responsive e-commerce web application built with React, Redux, 
 **GitHub Repository:** [https://github.com/am7876388/College_Project](https://github.com/am7876388/College_Project)
 
 ## Features
-
 ### 🛠 Component Structure
 - **Modular Components**: Includes `Header`, `ProductList`, `ProductItem`, `ProductDetail`, `Cart`, `CartItem`, and `NotFound` components.
 - **Reusable & Functional**: Utilizes PropTypes for type-checking and ensures component reusability.
@@ -33,7 +32,8 @@ ShoppyGlobe is a responsive e-commerce web application built with React, Redux, 
 ### 🔄 Routing
 - **React Router**: Implements routes for Home, Product Details, Cart, and 404 pages.
 - **Dynamic Routing**: Uses route parameters (e.g., `/products/:productId`) for product details.
-
+### Note
+If you are adding same item again and again new Item will not be created in the Cart only the count of previous item will increase
 ## Installation
 
 1. **Clone the Repository**
