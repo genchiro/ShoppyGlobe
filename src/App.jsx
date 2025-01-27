@@ -1,14 +1,13 @@
 import './App.css'
 import { Route,Routes } from 'react-router'
-import Home from './Components/Home'
-import Cart from './Components/Cart'
-import Shop from './Components/Shop'
-import ProductDetails from './Components/ProductDetails'
-import Loading from './Components/Loading'
+import Home from './Components/Home/Home'
+import Cart from './Components/Cart/Cart'
+import Shop from './Components/Shop/Shop'
+import ProductDetails from './Components/Products/ProductDetails'
+import Loading from './Components/UI/Loading'
 import useGet from './utils/CustomHook'
-import NotFound from './Components/404NotFound'
+import NotFound from './Components/NotFound/404NotFound.jsx'
 import { ToastContainer } from 'react-toastify'
-import Error from './Components/Error'
 function App() {
   useGet();
   return (

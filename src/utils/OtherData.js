@@ -1,8 +1,8 @@
-import Furniture from "../assets/Slide1.png"
+import Furniture from "../assets/Slide1.png"//Below Four Lines is Used to import Images into the Data
 import WirelessWatch from "../assets/Slide2.png"
 import HeadPhones from "../assets/Slide3.png"
 import SmarthPhone from "../assets/Slide4.png"
-const Data = [
+const Data = [//Each Item of this array contains a part of the Slide data that is sliding at the Home Page
     {H1:"50% Off For Your First Shopping",
       P:"Upgrade your living space with stylish furniture. Explore our wide range of designs for a modern touch.",
       SRC:Furniture

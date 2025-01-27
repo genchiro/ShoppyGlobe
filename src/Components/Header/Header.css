@@ -1,0 +1,80 @@
+#Nav_Container{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    }
+    nav{
+      position:fixed;
+      background-color: #fff;
+      width:100%;
+      display:flex;
+      flex-direction:column;
+      padding: 1rem 0;
+      box-shadow:0 0.6rem 0.6rem 0 rgba(9,5,29,.171);
+      z-index:4;
+      height:fit-content;
+    }
+    #Company_Name{
+      font-size:1.8rem;
+      color:#000;
+      margin-left:7rem;
+      display:flex;
+      align-items:center;
+    }
+    #Company_Name img{
+    width:2.1rem;
+    height:2.1rem;
+    margin-right:0.3rem;
+    }
+    #Nav_Buttons_Container{
+      display:flex;
+      gap:2rem;
+      margin-right:7rem;
+    }
+    .Navigation_Buttons,.Hidden_Buttons{
+      border:none;
+      background:transparent;
+      font-size:1.2rem;
+      font-weight:600;
+      outline:none;
+      color:#000;
+    }
+    #Hidden_Nav{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    display:none;
+    }
+    .Hidden_Buttons{
+    padding: 1rem 0;
+    }
+    #Cart_Icon{
+    position: relative;
+    }
+    #Cart_Icon:hover{
+    cursor: pointer;
+    }
+    #Items_Count{
+    height:1.4rem;
+    width:1.4rem;
+    border-radius:50%;
+    background-color: #0f3460;
+    color: #fff;
+    font-size:0.7rem;
+    position:absolute;
+    right:-0.6rem;
+    top:-0.3rem;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-weight:600;
+    }
+    .Navigation_Buttons img{
+    width:2rem;
+    height:2rem;
+    }
+    .Navigation_Links{
+        text-decoration:none;
+        color:black;
+    }

@@ -1,7 +1,7 @@
-import { useDispatch, useSelector } from "react-redux";
-import Cross from "../assets/Cross.svg"
-import { Delete, Increase, Subtract } from "../utils/Store";
-function CartItems(){
+import { useDispatch, useSelector } from "react-redux";//Importing Hooks from react-redux
+import Cross from "../../assets/Cross.svg"//Importing Cross image 
+import { Delete, Increase, Subtract } from "../../utils/Store";//Importing actions from Store.js
+function CartItems(){//CartItems function which will return cart Items
     const Data = useSelector((state) => state.CartData);
     const dispatch = useDispatch();
     function HandleAnything(e){

@@ -9,7 +9,7 @@
     .Slide_Container{
     flex-direction:row;
     }
-    #Adding_to_Cart{
+    #Adding_to_Carts{
     font-size:0.9rem;
     }
     #Price_Item{
@@ -41,7 +41,7 @@
     #Cart_Link{
      display:none;
     }
-    #Adding_to_Cart{
+    #Adding_to_Carts{
     font-size:0.9rem !important;
     }
     #Company_Name{
@@ -145,7 +145,7 @@
     height:1.5rem !important;
     }
     #Filter{
-    font-size: 1.9rem !important;
+    font-size: 1.5rem !important;
     }
     #Hamburger_Icon{
         display:block;
@@ -250,7 +250,7 @@
         font-size:2rem !important;
         margin-right:2.5rem !important;
        }
-       #Adding_to_Cart{
+       #Adding_to_Carts{
        width:15rem !important;
        height:5rem !important;
        font-size:1.5rem !important;

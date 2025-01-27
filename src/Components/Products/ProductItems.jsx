@@ -1,24 +1,22 @@
-import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router";
-import { Add } from "../utils/Store";
-import { useMemo } from "react";
+import { useDispatch, useSelector } from "react-redux";//Importing hooks
+import { useNavigate } from "react-router";//Importing hooks
+import { Add } from "../../utils/Store";//Importing Actions
+import { useMemo } from "react";//Importing hooks
 import {toast} from 'react-toastify';
-import Rating from "./Rating";
-function ProductItems(){
+import Rating from "../UI/Rating";//Importing Component
+function ProductItems(){//Returning the ProductItems with this function
     let num5;
     const dispatch = useDispatch();
     const Data = useSelector((state) => state.GetData);
     const Search = useSelector((state) => state.Search);
     const navigate = useNavigate();
-    function CartUpdating(e){
+    function CartUpdating(e){//Function to update Cart
     e.stopPropagation();
     toast("Item has been added to your cart")
     const Parent = e.target.closest(".Product_Items");
     const Details = Parent.querySelectorAll(".Product_Details");
     const Price = Parent.querySelectorAll(".Product_Price");
     const ID = parseInt(Parent.id,10);
-    console.log(Data);
-    console.log(ID);
     const Thumbnail = Data[ID - 1].Thumbnail;
     const Object = {Details:Details[0].textContent,Price:Price[0].textContent,Thumbnail:Thumbnail,Inputs:1}
     dispatch(Add(Object));
@@ -28,7 +26,7 @@ function ProductItems(){
     navigate(`/Details/${ID}`);
     }
     const num10 = useMemo(() => (Search) ? Data.filter((elem) => elem.Name.includes(Search)):Data,[Search,Data])
-    num5 = useMemo(() =>{
+    num5 = useMemo(() =>{//Generating random Data so that random data is generated every time
         const Max = num10.length;
         const Min = (Max > 6) ? Max - 6:0;
         const Random = (Max > 6) ?Math.floor(Math.random() * Min):0;    
@@ -46,4 +44,4 @@ function ProductItems(){
         })}
     </div>)
 }
-export default ProductItems;
+export default ProductItems;//Exporting default function

@@ -1,6 +1,8 @@
-import Star from "../assets/Star.svg";
-import StarEmpty from "../assets/StarEmpty.svg";
-function Rating(props){
+import Star from "../../assets/Star.svg";//Importing Images
+import StarEmpty from "../../assets/StarEmpty.svg";//Importing Images
+import "./UI.css";//Importing Styles
+import PropTypes from "prop-types"
+function Rating(props){//Using Props
 const Stars = Math.ceil(parseInt(props.Payload,10));
 const Data = ["","","","",""];
 return(<>

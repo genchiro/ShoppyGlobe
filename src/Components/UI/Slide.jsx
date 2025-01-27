@@ -1,10 +1,11 @@
-import { useMemo } from "react";
-import OtherData from "../utils/OtherData"
-import AliceCarousel from 'react-alice-carousel';
+import { useMemo } from "react";//Importing a hook
+import OtherData from "../../utils/OtherData"//Importing Components
+import AliceCarousel from 'react-alice-carousel';//Importing a carousel for SlideShow
 import 'react-alice-carousel/lib/alice-carousel.css';
+import "./UI.css"//Importing Styles
 function Slide(){
     const SlideItems = useMemo(() =>{
-        return OtherData.map((elem,index) =>{
+        return OtherData.map((elem,index) =>{//Mapping out every slide
             return(
             <div className="Slide_Container" key={index}>
             <div className="Slide_Data">
@@ -17,7 +18,7 @@ function Slide(){
             })
     },[])
     return(<>
-    <div className="carousel">
+    <div className="carousel">{/*Running the slide show*/}
     <AliceCarousel autoPlay infinite autoPlayInterval={3000} disableDotsControls disableButtonsControls>
     {SlideItems}
     </AliceCarousel>

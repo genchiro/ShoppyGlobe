@@ -1,0 +1,219 @@
+#ProductList{
+    width:100%;
+    padding:6rem 0;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+  }
+  #ProductList h1{
+    width:100%;
+    text-align:center;
+    font-size:3rem;
+  }
+  #Product_Items_Container{
+  width:100%;
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin:2rem 0;
+  }
+  .Product_Items{
+    padding:1rem;
+    margin:1rem;
+    width:fit-content;
+    background-color:#fff;
+    border-radius:0.8rem;
+    box-shadow:0 0.1rem 0.3rem rgb(3 0 71/9%);
+  }
+  .Product_Items:hover{
+    cursor: pointer;
+  }
+  .Product_Discount{
+    font-size:0.8rem;
+    width:fit-content;
+    background-color:#0f3460;
+    color:#ffffff;
+    margin:0.8rem;
+    margin-left:-0.5rem;
+    padding:0.3rem 1rem;
+    border-radius:5rem;
+  }
+  .Product_Image{
+    width:25rem;
+    height:17rem;
+  }
+  .Product_Details{
+    font-size:1.3rem;
+    font-weight:500;
+    margin:1rem 0;
+  }
+  .Product_Other_Container{
+    width:100%;
+    display: flex;
+    justify-content:space-between;
+    margin:1rem 0 0.5rem;
+  }
+  .Product_Price{
+    font-size:2rem;
+    font-weight:600;
+  }
+  .Product_Rating{
+    display:flex;
+    width:100%;
+  }
+  .Adding_To_Cart{
+    background:#fff;
+    font-size:2.5rem;
+    width:3.5rem;
+    height:3.5rem;
+    border:0.1rem solid rgb(3 0 71/9%);
+    color:#0f3460;
+    border-radius:50%;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    transition: all 0.3s ease;
+  }
+  .Adding_To_Cart:hover{
+  background-color: #0f3460;
+  color: #fff;
+  cursor: pointer;
+  }
+  .Overlay_Background{
+    margin-top:4rem;
+    width:100%;
+    background:url("./assets/Overlay.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    height:fit-content;
+    background-position:center;
+    }
+    .Overlay{
+    width:100%;
+    height:15rem;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:2.5rem;
+    background-color:rgba(0,0,0,0.6);
+    }
+    .Product_Detail{
+    width:100%;
+    padding:4rem 0;
+    display:flex;
+    justify-content:center;
+    }
+    .Product_Detail img{
+    height:100%;
+    width:30%;
+    padding:0 2rem;
+    }
+    .Product_Other_Details{
+    width:40%;
+    padding:0 1rem;
+    display:flex;
+    flex-direction:column;
+    }
+    #Item_Name{
+    width:100%;
+    margin-bottom:1.5rem;
+    font-size:2.5rem;
+    font-weight:500;
+    }
+    #Rating_Container{
+    display:flex;
+    margin-bottom:1rem;
+    }
+    #Star_Rating{
+    width:fit-content;
+    display:flex;
+    justify-content:start;
+    align-items: center;
+    margin-right:3rem;
+    }
+    #Star_Rating img{
+      height:1.2rem;
+      width:1.2rem;
+      padding:0;
+      padding-right:0.5rem;
+    }
+    #Numerical_Rating{
+    width:fit-content;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1.2rem;
+    }
+    #Price_Category_Container{
+    display:flex;
+    margin-bottom:1rem;
+    }
+    #Price_Item{
+    font-size:2rem;
+    }
+    #Product_Category{
+    margin-top:0.7rem;
+    font-weight:500;
+    font-size:1.2rem;
+    }
+    #Product_Description{
+    width:90%;
+    font-size:1rem;
+    margin-bottom:3rem;
+    }
+    #Total_Input{
+    height:2rem;
+    width: 7rem;
+    border-radius:0.5rem;
+    margin-bottom:1rem;
+    }
+    #Adding_to_Carts{
+    width:7rem;
+    padding:1rem;
+    height:3rem;
+    border-radius:0.5rem;
+    background-color: #0f3460;
+    color: #fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    }
+    #Adding_to_Carts:hover{
+      background-color:#fff;
+      color:#0f3460;
+      cursor: pointer;
+    }
+    #Description_Rating_Container{
+    width:100%;
+    margin: 4rem 0;
+    }
+    #Description_Rating{
+    width:100%;
+    display:flex;
+    margin-left:6rem;
+    margin-bottom:1rem;
+    }
+    #Description_Rating button{
+    background:transparent;
+    border:none;
+    margin-right:1rem;
+    font-size: 1.2rem;
+    font-weight:600;
+    }
+    #Description_Rating button:hover{
+    cursor: pointer;
+    }
+    #Product_Complete_Description{
+    margin-left:6rem;
+    height:7.5rem;
+    background-color: #fff;
+    width:90%;
+    font-size:1.2rem;
+    }
+    #Products_Like{
+    width:100%;
+    margin-bottom:1rem;
+    margin-left:6rem;
+    }
+      

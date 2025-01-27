@@ -1,0 +1,30 @@
+#AdditionalInfo{/* Styling The AdditionalInfo container*/
+    width:100%;
+    background-color:#fff;
+    padding:3rem 0;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    }
+    #AdditionalInfo img{/*Styling AdditionalInfo image*/
+    width:2rem;
+    height: 2rem;
+    }
+    .Additional_Data{/*Additional Data Styling*/
+      border:solid 0.4rem #fff;
+      display:flex;
+      flex-direction:column;
+      align-items: center;
+      padding:1rem;
+      width:19%;
+      background-color:rgb(253,239,230);
+    }
+    .Additional_Data h3{/*Styling Additional Data h3*/
+      font-size:1.5rem;
+      margin:1rem 0;
+      font-weight:500;
+    }
+    .Additional_Data p{/*Styling Addtional Data Paragraph*/
+      font-size:1rem;
+      margin:1rem 0;
+    }

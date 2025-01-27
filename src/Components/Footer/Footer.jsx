@@ -1,8 +1,9 @@
-function Footer(){
+import "./Footer.css"//Importing Style for Footer
+function Footer(){//Footer function
     return(<div id="Footer_container"><footer>
      <div id="footer_p1">
       <h1>ShoppyGlobe</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor libero id et, in gravida. Sit diam duis mauris nulla cursus. Erat et lectus vel ut sollicitudin elit at amet.</p>
+      <p>ShoppyGlobe offers a seamless shopping experience with a wide range of high-quality products, fast shipping, and secure payment options. Shop confidently with our dedicated customer support and enjoy exclusive deals.</p>
      </div>
      <div id="footer_p2">
     <h1>About Us</h1>

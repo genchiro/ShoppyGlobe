@@ -1,0 +1,121 @@
+#Cart_Container{/*Styling the Cart Container*/
+    width:100%;
+    height:100%;
+    background-color:#f6f9fc;
+    padding:6rem 0;
+    display:flex;
+    justify-content: center;
+  }
+  #Cart_Items{/*Styling the Cart Items*/
+  width:55%;
+  border-radius:0.8rem;
+  height:fit-content;
+  box-shadow:0 0.1rem 0.3rem rgb(3 0 71/9%);
+  padding:2rem;
+  margin:1rem;
+  color:#0f3460;
+  font-size:1.2rem;
+  }
+  #Cart_Price_Container{/*Styling the Cart Price Container*/
+  width:30%;
+  background-color:#fff;
+  margin-bottom:2rem;
+  padding:1.5rem;
+  box-sizing:border-box;
+  }
+  #Cart_Summary{/*Styling the Cart Summary*/
+  border-bottom:solid 0.1rem rgb(3 0 71/9%);
+  font-weight:600;
+  margin-bottom:2rem;
+  padding-bottom:1rem;
+  color: #0f3460;
+  font-size:1.5rem;
+  }
+  #Total_Price{/*Styling the Total Price*/
+  font-size:1.2rem;
+  margin-bottom:0.5rem;
+  }
+  #Cart_Price{/*Styling the Cart Price*/
+  color: #0f3460;
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-bottom:0.5rem;
+  }  
+.Products_in_Cart{/*Styling the Cart Products*/
+    width:100%;
+    display:flex;
+    margin-bottom:1rem;
+    background-color:#fff;
+    }
+    .Products_in_Cart img{/*Styling the Cart image*/
+    height:8rem;
+    width:8rem;
+    }
+    .Items_Buttons{/*Styling the Cart Item Buttons*/
+    position: relative;
+    display:flex;
+    flex-grow:1;
+    flex-direction:column;
+    align-items:end;
+    }
+    .Items_Prices{/*Styling the Cart Item Prices*/
+    display:flex;
+    font-size:1rem;
+    color:grey;
+    margin-top:4rem;
+    }
+    .Items_Prices h3{
+      margin-right:2rem;
+      font-weight: 400;
+    }
+    .Items_Details{
+    padding:0 2rem;
+    width:fit-content;
+    height:100%;
+    }
+    .Items_Details h1{
+    text-align:start !important;
+    font-size:1.5rem;
+    font-weight:500;
+    color:black;
+    text-align:center;
+    }
+    .Items_Total_Price{
+    color: #0f3460;
+    font-weight:500;
+    }
+    .Other_Button_Container{
+    width:100%;
+    display:flex;
+    justify-content:end;
+    margin-top:2.5rem;
+    }
+    .Other_Button_Container button{
+    background-color:#fff;
+    font-size:2rem;
+    color: #0f3460;
+    height:3rem;
+    width:3rem;
+    border-radius:0.5rem;
+    border:solid 0.1rem rgb(3 0 71/9%);
+    margin-left: 1rem;
+    transition:all 0.3s ease;
+    }
+    .Other_Button_Container button:hover{
+    background-color: #0f3460;
+    color: #fff;
+    cursor: pointer;
+    }
+    .Remove{
+      background-color:transparent;
+      border:none;
+      }
+    .Remove img:hover{
+     transform: scale(1.05);
+     cursor: pointer;
+    }
+    .Remove img{
+    width:2rem;
+    height:2rem;
+    transition: all 0.3s ease;
+    }

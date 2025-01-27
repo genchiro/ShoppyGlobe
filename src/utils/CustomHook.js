@@ -2,11 +2,11 @@ import { useEffect } from "react";
 import { useDispatch, useSelector} from "react-redux";
 import { Updating } from "./Store";
 import { Error } from "./Store";
-function useGet(){
+function useGet(){//Custom Hook for fetching Data
     const dispatch = useDispatch();
     const Category = useSelector((state) => state.Category);
-    let URL = (Category === "All") ? `https://dummyjson.com/products`:`https://dummyjson.com/products/category/${Category}`
-    useEffect(() =>{
+    let URL = (Category === "All") ? `https://dummyjson.com/products`:`https://dummyjson.com/products/category/${Category}`//Data is fetched in two methods first is for all of the Data and second is based upon Category
+    useEffect(() =>{//I have used useEffect to run the hook after the Components have mounted
     const Data  = async () =>{
         try {
         const num1 = await fetch(URL);
@@ -30,14 +30,14 @@ function useGet(){
             }
             return Object;
         })
-        dispatch(Error(false));
-        dispatch(Updating(num3));
+        dispatch(Error(false));//If the Error is not caught then the Error is set to false
+        dispatch(Updating(num3));//The Object is created and being stored in the store
         }
         } catch (error) {
-        dispatch(Error(true));
+        dispatch(Error(true));//If the Error is caught then the Error is set to true and an error screen will popup
         }
     }
     Data();
-    },[Category])
+    },[Category])//The Data will only be fetched if the Category changes
 }
 export default useGet;

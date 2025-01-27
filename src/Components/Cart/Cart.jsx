@@ -1,10 +1,14 @@
-import { useEffect, useMemo, useState } from "react";
-import CartItems from "./CartItems";
-import Footer from "./Footer";
-import NavBar from "./NavBar";
-import { useSelector } from "react-redux";
-import Error from "./Error";
-function Cart(){
+import { useEffect, useMemo, useState } from "react";//Importing Hooks from react
+import Footer from "../Footer/Footer";//Below Two lines are used to import different Components 
+import NavBar from "../Header/NavBar";
+import { useSelector } from "react-redux";//Importing useSelector Hook from react-redux
+import Error from "../UI/Error";//Importing Error component from UI
+import "./Cart.css"//Importing Styling for this
+import { Suspense } from "react";//Importing Suspense from react
+import Loading from "../UI/Loading";//Importing Loading Screen
+import { lazy } from "react";//Importing lazy from react
+const CartItems = lazy(() => import("./CartItems"));
+function Cart(){//Cart Function which will return the Cart
     const[Price,setPrice] = useState(0.00);
     const Cart = useSelector((state) => state.CartData);
     const Errors = useSelector((state) => state.Error); 
@@ -25,13 +29,13 @@ function Cart(){
     useEffect(() =>{
     setPrice(num3);
     },[Cart])
-    if(Errors){
+    if(Errors){//Checking Errors
     return<Error/>
     }
     return(<>
     <NavBar/>
     <div id="Cart_Container">
-    <div id="Cart_Items"><CartItems/></div>
+    <div id="Cart_Items"><Suspense fallback = {<Loading/>}><CartItems/></Suspense></div>{/*Using suspense to Increase optimizations*/}
     <div id="Cart_Price_Container">
     <div id="Cart_Summary">Cart Summary</div>
     <div id="Total_Price">Total Price:</div>
