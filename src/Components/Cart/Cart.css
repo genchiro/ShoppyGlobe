@@ -15,19 +15,23 @@
   margin:1rem;
   color:#0f3460;
   font-size:1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   }
   #Cart_Price_Container{/*Styling the Cart Price Container*/
   width:30%;
   background-color:#fff;
   margin-bottom:2rem;
-  padding:1.5rem;
+  padding:3rem;
   box-sizing:border-box;
+  border-radius: 1rem;
   }
   #Cart_Summary{/*Styling the Cart Summary*/
   border-bottom:solid 0.1rem rgb(3 0 71/9%);
   font-weight:600;
   margin-bottom:2rem;
-  padding-bottom:1rem;
+  padding-bottom:2rem;
   color: #0f3460;
   font-size:1.5rem;
   }
@@ -45,7 +49,9 @@
     width:100%;
     display:flex;
     margin-bottom:1rem;
-    background-color:#fff;
+    background-color:#241212;
+    border-radius: 1rem;
+    padding: 1rem;
     }
     .Products_in_Cart img{/*Styling the Cart image*/
     height:8rem;
