@@ -17,7 +17,7 @@ function ProductItems(){//Returning the ProductItems with this function
     const Details = Parent.querySelectorAll(".Product_Details");
     const Price = Parent.querySelectorAll(".Product_Price");
     const ID = parseInt(Parent.id,10);
-    const Thumbnail = Data[ID - 1].Thumbnail;
+    const Thumbnail = Data[ID].Thumbnail;
     const Object = {Details:Details[0].textContent,Price:Price[0].textContent,Thumbnail:Thumbnail,Inputs:1}
     dispatch(Add(Object));
     }

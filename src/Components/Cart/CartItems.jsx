@@ -20,6 +20,7 @@ function CartItems(){//CartItems function which will return cart Items
     return(<>
       {Data.map((elem,index) =>{
       if(elem){
+        console.log(elem.Details, elem.Thumbnail);
         return(<div className="Products_in_Cart" id={index} key={index}>
             <img src={elem.Thumbnail} alt="" />
             <div className="Items_Details">
