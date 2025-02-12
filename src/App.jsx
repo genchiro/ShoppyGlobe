@@ -8,6 +8,7 @@ import Loading from './Components/UI/Loading'
 import useGet from './utils/CustomHook'
 import NotFound from './Components/NotFound/404NotFound.jsx'
 import { ToastContainer } from 'react-toastify'
+import Login from './Components/LoginAndRegister/Login.jsx'
 function App() {
   useGet();
   return (
@@ -18,6 +19,7 @@ function App() {
     <Route path='/Shop' element = {<Shop/>}/>
     <Route path='/Details/:id' element = {<ProductDetails/>}/>
     <Route path='/Loading' element = {<Loading/>}/>
+    <Route path='/Login' element = {<Login/>}/>
     <Route path='/*' element = {<NotFound/>}/>
     </Routes>
     <ToastContainer/>

@@ -1,0 +1,83 @@
+#Login_Container{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background-color:#f4f4f4;
+    }
+    .LoginForm{
+    margin-top:8rem;
+    width:35%;
+    max-height:20rem;
+    display:flex;
+    overflow:hidden;
+    box-shadow:0 0.6rem 0.6rem 0 rgba(9,5,29,0.171);
+    border-radius:0.5rem;
+    padding:2rem;
+    margin-bottom:2rem;
+    background-color:#fff;
+    transition: all 0.5s ease;
+    }
+    .Login_Interior{
+    min-width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:1.5rem;
+    }
+    #Register_Form{
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    }
+    .LoginForm h2{
+    text-align:center;
+    font-size:1.8rem;
+    font-weight:700;
+    color: #0f3460;
+    }
+    .Register{
+    width:100%;
+    text-align:center;
+    color:#333;
+    font-size:1rem;
+    }
+    .Register a{
+    color:#0f3460;
+    font-weight:600;
+    text-decoration:none;
+    transition:all 0.3s ease;
+    }
+    .Register a:hover{
+    color:#0d2d4c;
+    text-decoration:underline;
+    }
+    .LoginButton{
+    width:100%;
+    font-size:1.2rem;
+    padding:0.8rem;
+    color:white;
+    border:none;
+    border-radius:0.3rem;
+    cursor: pointer;
+    background-color:#0f3460;
+    transition: all 0.3s ease;
+    }
+    .LoginButton:hover{
+    cursor: pointer;
+    background-color:#0d2d4c;
+    }
+    .LoginInputs{
+    background-color:#f2f2f2;
+    outline: 0;
+    padding:0.8rem;
+    border:0.1rem solid #ccc;
+    border-radius:0.3rem;
+    box-sizing: border-box;
+    font-size:1rem;
+    width:100%;
+    transition:all 0.3s ease;
+    }
+    .LoginInputs:focus{
+    border-color:#0f3460;
+    box-shadow:0 0 0.5rem rgba(15,52,96,0.5);
+    }
