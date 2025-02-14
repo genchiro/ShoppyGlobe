@@ -4,18 +4,18 @@ import "./LoginAndRegister.css"
 import { Link } from "react-router";
 function Login(){
 const [Visibility,setVisibility] = useState(["visible","hidden"]);
-const [position,setposition] = useState("2rem");
+const [position,setposition] = useState("10vw");
 const [height,setheight] = useState("20rem");
 function HandleClick(e){
 const num1 = e.target.closest("div").id;
 if(num1 === "Login"){
 setVisibility(["visible","hidden"]);
-setposition("2rem");
+setposition("10vw");
 setheight("20rem");
 }
 else{
 setVisibility(["hidden","visible"]);
-setposition("-35rem");
+setposition("-35vw");
 setheight("35rem");
 }
 }
